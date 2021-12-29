@@ -1,0 +1,23 @@
+.footer__wrapper {
+    background: $color-bg-exp;
+    padding: $padding-left-align;
+    border-radius: 0 40px 0 40px;     
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .footer__link:hover {
+        opacity: 0.7;
+    }
+}
+
+.footer__logo {
+    width: 150px;
+    @extend %transition;
+    &:hover {
+        opacity: 0.7;        
+    }
+}

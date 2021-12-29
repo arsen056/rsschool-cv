@@ -1,0 +1,47 @@
+.project-wrapper {
+    background: $color-bg;
+    padding: $padding-left-align;
+    border-radius: 40px 0 40px 0;  
+    padding-bottom: 80px;
+}
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 20px;
+    padding-top: 20px;
+    .project__item {
+        position: relative;
+        background: gray;
+        width: 135px;
+        height: 100px;
+        &:hover {
+            .project__info {
+                opacity: 1;
+                background: rgba(102, 153, 255, 1);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+    }
+}
+
+.project__info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    z-index: 3;
+    transform: translateY(-50%);
+    @extend %transition;
+}
