@@ -1,0 +1,26 @@
+.experience {
+    padding-bottom: 30px;
+}
+
+.experience-wrapper {    
+    background: $color-bg-exp;
+    padding: $padding-left-align;
+    border-radius: 40px 0 40px 0;    
+}
+
+.experience__info {
+    display: inline-flex;
+    align-items: baseline;
+
+    .experience__date {
+        width: 30%;
+        line-height: 1.5;
+    }
+    
+    .experience__description {
+        width: 70%;
+        p {
+            line-height: 1.5;
+        }
+    }
+}

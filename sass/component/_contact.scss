@@ -1,0 +1,22 @@
+.contact {
+    padding-bottom: 30px;
+}
+
+.contact-wrapper {
+    background: $color-bg-exp;
+    padding: $padding-left-align;
+    border-radius: 0 40px 0 40px;  
+}
+
+.contact__list {
+    li {
+        padding: 10px 0;
+        .contact__link {
+            color: $color-link;
+            @extend %transition;
+            &:hover {
+                color: $color-hover;
+            }
+        }
+    }
+}
